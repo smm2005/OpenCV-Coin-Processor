@@ -33,7 +33,7 @@ while True:
                             amount += k
                 print("Coins " + str(integer) + " Amount: " + str(round(amount, 2)))
                 print("EXPECTED AMOUNT: " + str(testtable.get(integer)))
-                if amount == testtable[integer]:
+                if abs(amount - testtable[integer]) <= 0.001:
                     print(ansi_green + "*** TEST PASSED ***" + ansi_reset)
                 else:
                     print(ansi_red + "** TEST FAILED **" + ansi_reset)
