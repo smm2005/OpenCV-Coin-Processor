@@ -12,6 +12,9 @@ testtable = {1: 3.40, 2: 4.90, 3: 6.00, 4: 6.00, 5: 6.50, 6: 2.25, 7: 10.00, 8: 
 while True:
     ipt = input(">> ")
 
+    if ipt == "quit" or ipt == "q":
+        break
+
     try:
         ipt = ipt.lstrip()
         ipt = ipt.rstrip()
@@ -44,8 +47,6 @@ while True:
                 print(ansi_red + "ERROR: Integer not in the range of 1 to 15. Make sure the integer is between 1 to 15" + ansi_reset)
         else:
             print(ansi_red + "ERROR: Use the prefix \"feed image\" to input an image into the computer vision model" + ansi_reset)
-        if ipt == "q" or ipt == "quit":
-            break
     except:
         print(ansi_red + "ERROR: IMAGE PATH INVALID OR CORRUPTED" + ansi_reset)
 
