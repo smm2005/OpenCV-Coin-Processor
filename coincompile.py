@@ -41,7 +41,7 @@ while True:
                 cv.waitKey(5000)
                 cv.destroyAllWindows()
             else:
-                print(ansi_red + "ERROR: Integer not in the range of 1 to 15. Make sure the integer is between 1 to 15")
+                print(ansi_red + "ERROR: Integer not in the range of 1 to 15. Make sure the integer is between 1 to 15" + ansi_reset)
         else:
             print(ansi_red + "ERROR: Use the prefix \"feed image\" to input an image into the computer vision model" + ansi_reset)
         if ipt == "q" or ipt == "quit":
