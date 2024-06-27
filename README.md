@@ -19,6 +19,7 @@ the following requirements are met
 - Users have "OpenCV" and "NumPy" installed. If not, users can do this with `pip install numpy` and `pip install opencv-contrib-python`
 - **NO** test image **NOR** the configuration image in this repository is manipulated in any way.
 
+--------------------------------------------------------------------------------------------------------------
 
 **FEEDING IMAGES INTO THE PROCESSOR**
 
@@ -44,4 +45,15 @@ a display that says `**TEST PASSED**`. Otherwise, there will be a display that s
 
 ![image](https://github.com/smm2005/OpenCV-Coin-Processor/assets/70491113/f4346985-f824-4bad-8d39-3e3596523040)
 
+In addition to the output from the terminal, there will also be an output of the test image which will be up for display for 5 seconds. There is no inherent benefit to this feature but it's nice if users want to confirm for themselves if the test amounts match the processed amounts.
+
+--------------------------------------------------------------------------------------------------------------
+
+**ENVIRONMENT SETUP**
+
+For my coin processor to work, the camera had to be in it's exact position so as to have the radii of the coins in the test images match up with the radii of the coins in the configuration image. Additionally, the backdrop for the coins has to comprise of solely one colour, so I decided to lay the coins on a white poster board. Ultimately, the environment for the coin processor looked like this...
+
+![20240625_110836](https://github.com/smm2005/OpenCV-Coin-Processor/assets/70491113/9f1d5042-5a27-4191-bf8f-3ada3c0676c5)
+
+The paper is there to prevent any reflection from the drawer since the reflection will produce false results for the coin processor.
 
