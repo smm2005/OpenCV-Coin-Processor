@@ -48,6 +48,17 @@ a display that says `**TEST PASSED**`. Otherwise, there will be a display that s
 In addition to the output from the terminal, there will also be an output of the test image which will be up for display for 5 seconds. There is no inherent benefit to this feature but it's nice if users want to confirm for themselves if the test amounts match the processed amounts.
 
 --------------------------------------------------------------------------------------------------------------
+**PROCESS**
+
+The extraction and assignment of coins from the test images to their specified coin denominations occured in the following steps:
+
+- Gaussian blur (convolution) to reduce the presence of noise in the image
+- Adaptive thresholding for edge detection
+- Morphological transformation that closes the circular shape. This too also reduces the presence of noise in the thresholded image.
+- Contouring to identify viable outlines present in the thresholded image
+- Determining the minimum enclosing circle that surrounds the contours
+
+--------------------------------------------------------------------------------------------------------------
 
 **ENVIRONMENT SETUP**
 
