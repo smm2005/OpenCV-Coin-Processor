@@ -58,6 +58,11 @@ The extraction and assignment of coins from the test images to their specified c
 - Contouring to identify viable outlines present in the thresholded image
 - Determining the minimum enclosing circle that surrounds the contours
 
+![image](https://github.com/smm2005/OpenCV-Coin-Processor/assets/70491113/45b0d847-da16-4c74-a001-732856915534)
+
+![image](https://github.com/smm2005/OpenCV-Coin-Processor/assets/70491113/a042182c-e0f7-473e-88b3-6705492b72f4)
+
+
 --------------------------------------------------------------------------------------------------------------
 
 **ENVIRONMENT SETUP**
